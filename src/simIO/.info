@@ -1,0 +1,55 @@
+#
+# ______     __     __    __     __  __     __         ______     ______   __     ______     __   __    
+#/\  ___\   /\ \   /\ "-./  \   /\ \/\ \   /\ \       /\  __ \   /\__  _\ /\ \   /\  __ \   /\ "-.\ \   
+#\ \___  \  \ \ \  \ \ \-./\ \  \ \ \_\ \  \ \ \____  \ \  __ \  \/_/\ \/ \ \ \  \ \ \/\ \  \ \ \-.  \  
+# \/\_____\  \ \_\  \ \_\ \ \_\  \ \_____\  \ \_____\  \ \_\ \_\    \ \_\  \ \_\  \ \_____\  \ \_\\"\_\ 
+#  \/_____/   \/_/   \/_/  \/_/   \/_____/   \/_____/   \/_/\/_/     \/_/   \/_/   \/_____/   \/_/ \/_/ 
+#
+# 		     ______   __     __         ______    
+#		    /\  ___\ /\ \   /\ \       /\  ___\   
+#	  	    \ \  __\ \ \ \  \ \ \____  \ \  __\   
+#   	     \ \_\    \ \_\  \ \_____\  \ \_____\ 
+#  		      \/_/     \/_/   \/_____/   \/_____/ 
+#
+#					|
+#					|
+#					|  /  How to coordinate?
+#					| /
+#					|/
+#			--------|--------> x
+#				   /|
+#				  / |  <-- Like this!
+#				 /  |
+#				\/	|
+#				z  \/
+#					y
+#
+#	Lines that contain '#' are comments starting from that character
+#	
+#	Initialising a planet starts with the 'body' identifier
+#	followed by the planets name, for example 'Earth'
+#	
+#	Followed by the body identifier you must set the location
+#	of the planet and voluntarily the velocity also
+#	
+#	All planet data must be in vector form (starting with the 
+#	x -component and followed by the y- and z -components [x, y, z])
+#	Example vector:
+#	[100, 100, 100]
+#
+#	Or if you prefer to enter only the x and y coordinates giving 
+#	the z component a default value of 0:
+#	[100, 100] => [100, 100, 0]
+#
+#	Entrering only '[]' will result by default in a zero ([0, 0, 0]) vector
+#
+#	Order of the planet data does not matter.
+#	
+#	Nothing in this file is case sensitive
+#	
+#	Locations should be considered as above,
+#	the units being 10E6 kilometers.
+#
+#	Velocities are in [km/s] format.
+#
+#

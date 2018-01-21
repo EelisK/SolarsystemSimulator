@@ -1,0 +1,120 @@
+#
+# ______     __     __    __     __  __     __         ______     ______   __     ______     __   __    
+#/\  ___\   /\ \   /\ "-./  \   /\ \/\ \   /\ \       /\  __ \   /\__  _\ /\ \   /\  __ \   /\ "-.\ \   
+#\ \___  \  \ \ \  \ \ \-./\ \  \ \ \_\ \  \ \ \____  \ \  __ \  \/_/\ \/ \ \ \  \ \ \/\ \  \ \ \-.  \  
+# \/\_____\  \ \_\  \ \_\ \ \_\  \ \_____\  \ \_____\  \ \_\ \_\    \ \_\  \ \_\  \ \_____\  \ \_\\"\_\ 
+#  \/_____/   \/_/   \/_/  \/_/   \/_____/   \/_____/   \/_/\/_/     \/_/   \/_/   \/_____/   \/_/ \/_/ 
+#
+# 		     ______   __     __         ______    
+#		    /\  ___\ /\ \   /\ \       /\  ___\   
+#	  	    \ \  __\ \ \ \  \ \ \____  \ \  __\   
+#   	     \ \_\    \ \_\  \ \_____\  \ \_____\ 
+#  		      \/_/     \/_/   \/_____/   \/_____/ 
+#
+#					|
+#					|
+#					|  /  How to coordinate?
+#					| /
+#					|/
+#			--------|--------> x
+#				   /|
+#				  / |  <-- Like this!
+#				 /  |
+#				\/	|
+#				z  \/
+#					y
+#
+#	Lines that contain '#' are comments starting from that character
+#	
+#	Initialising a planet starts with the 'body' identifier
+#	followed by the planets name, for example 'Earth'
+#	
+#	Followed by the body identifier you must set the location
+#	of the planet and voluntarily the velocity also
+#	
+#	All planet data must be in vector form (starting with the 
+#	x -component and followed by the y- and z -components [x, y, z])
+#	Example vector:
+#	[100, 100, 100]
+#
+#	Or if you prefer to enter only the x and y coordinates giving 
+#	the z component a default value of 0:
+#	[100, 100] => [100, 100, 0]
+#
+#	Entrering only '[]' will result by default in a zero ([0, 0, 0]) vector
+#
+#	Order of the planet data does not matter.
+#	
+#	Nothing in this file is case sensitive
+#	
+#	Locations should be considered as above,
+#	the units being 10E6 kilometers.
+#
+#	Velocities are in [km/s] format.
+#
+#
+
+body: Sun
+	:location	[]
+	
+body: Mercury
+	:location	[57.9, 0, 0]
+	:velocity	[0, 47.89, 0]
+	
+body: Venus
+	:location	[108.2, 0, 0]
+	:velocity	[0, 35.02, 0]
+
+body: Earth
+	:location	[149.6, 0, 0]
+	:velocity	[0, 29.78, 0]
+	
+body: Satellite
+	:location	[160, 0, 0]
+	:velocity	[0, 30, 0]
+	:mass		1 000
+
+body: Mars
+	:location	[227.9, 0, 0]
+	:velocity	[0, 24.077, 0]
+
+body: Jupiter
+	:location	[778.6, 0, 0]
+	:velocity	[0, 13.07, 0]
+	
+body: Satellite
+	:location	[790, 0, 0]
+	:velocity	[1, 14.5, 0]
+	
+body: Moon
+	:location	[785, 0, 0]
+	:velocity	[-1, 14, 0]
+
+body: Saturn
+	:location	[1433.5, 0, 0]
+	:velocity	[0, 9.69, 0]
+	
+body: Satellite
+	:location	[1449, 0, 0]
+	:velocity	[0, 9.81, 0]
+	
+body: Satellite
+	:location	[1433.5, 0, 20]
+	:velocity	[0, 9.9, 0.4]
+
+body: Uranus
+	:location	[2872.5, 0, 0]
+	:velocity	[0, 6.81, 0]
+	
+body: Satellite
+	:location	[2890, 0, 0]
+	:velocity	[0, 6.9, 0]
+	:mass		1 000
+	
+body: Neptune
+	:location	[4495.1, 0, 0]
+	:velocity	[0, 5.43, 0]
+	
+body: Pluto
+	:location	[5906.4, 0 ,0]
+	:velocity	[0, 4.3, 0]
